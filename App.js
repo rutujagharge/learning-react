@@ -25,18 +25,22 @@
 const parent = React.createElement(
     "div",
     { id: "parent" },
+    [React.createElement(
+        "div",
+        { id: "child1" },
+        // Array Of Children
+        [React.createElement("h1", {}, "I'm an h1 tag of child 1"),
+        React.createElement("h2", {}, "I'm an h2 tag of child 1")]    // we can add more than 1 child in an Array if have to add 2 tags as h1 and h2
+    ),
     React.createElement(
         "div",
-        { id: "child" },
+        { id: "child2" },
         // Array Of Children
-        [React.createElement("h1", {}, "I'm an h1 tag"),
-        React.createElement("h2", {}, "I'm an h2 tag")]    // we can add more than 1 child in an Array if have to add 2 tags as h1 and h2
-    ));
+        [React.createElement("h1", {}, "I'm an h1 tag of child 2"),
+        React.createElement("h2", {}, "I'm an h2 tag of child 2")]    // we can add more than 1 child in an Array if have to add 2 tags as h1 and h2
+    )]
+);
 
-// const heading = React.createElement(s
-//     "h1",
-//     { id: "heading" },
-//     "Hello World from React!");
 
 console.log(parent)
 
