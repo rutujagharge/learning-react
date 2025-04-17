@@ -21,6 +21,9 @@
  * ReactElement(Object)  = HTML(Browser understands)
  * 
  */
+//---------------------------------------------- Eposide 2----------------------------------------
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 const parent = React.createElement(
     "div",
@@ -48,3 +51,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // whatever will do we will render inside header using render 
 //  It is rendering on to the DOM while rendering it convert itself into that html and puts it up into the DOM
 root.render(parent);
+
+//---------------------------------------------- Eposide 2----------------------------------------
+
+//---------------------------------------------- Eposide 3----------------------------------------
